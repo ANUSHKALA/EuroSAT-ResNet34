@@ -3,7 +3,7 @@ import os
 from functions import *
 
 examples_dir = 'examples'
-title = "Birds Classification - ResNet34 PyTorch"
+title = "Land Use Classification - ResNet34 PyTorch"
 examples = [os.path.join(examples_dir, i) for i in os.listdir('examples')]
 
 interface = gr.Interface(fn=predict, inputs=gr.Image(type= 'numpy', shape=(64, 64)).style(height= 256),
